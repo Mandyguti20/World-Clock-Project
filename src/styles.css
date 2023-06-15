@@ -6,7 +6,7 @@ body {
 
 .container {
     text-align: center;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     background-color: #1c1c1c;
     padding: 20px;
@@ -18,11 +18,47 @@ body {
     color: #1aa7ec;
     font-size: 60px;
     margin: 5px;
+    font-weight: 500;
 }
 
 .am-pm {
     font-size: 20px;
     margin-left: -10px;
+    font-weight: 500;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+select {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    padding: 3px;
+    opacity: 0.8;
+    margin-top: 30px;
+}
+
+h3.city-heading {
+    margin: 30px auto 5px ;
+}
+
+.city {
+    text-align: left;
+}
+
+.city-date {
+    font-size: 11px;
+}
+
+.city-time {
+    text-align: right;
+    position: relative;
+    top: -40px;
+    font-size: 28px;
+    font-weight: 300;
 }
 
 footer {
