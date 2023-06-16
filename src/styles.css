@@ -1,12 +1,14 @@
 body {
     background-color: #1aa7ec;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: sans-serif;
+    min-width: 280px;
 }
 
 .container {
     text-align: center;
     max-width: 300px;
+    min-width: min-content;
     margin: 0 auto;
     background-color: #1c1c1c;
     padding: 20px;
@@ -36,30 +38,36 @@ select {
     display: block;
     width: 80%;
     border-radius: 5px;
-    padding: 3px;
-    opacity: 0.8;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    padding: 1px;
+    opacity: 0.9;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 h3.city-heading {
-    margin: 30px auto 5px ;
+    margin: 30px auto 5px;
+    font-size: 16px;
 }
 
 .city {
     text-align: left;
-    margin-top: -30px;
+    margin: 5px auto 5px;
+    border-bottom: 1px solid rgba(254, 254, 254, 0.205);
+    display: block;
+    padding-bottom: 3px;
+    width: auto;
+    height: 50px;
 }
 
 .city-date {
-    font-size: 11px;
+    font-size: 8px;
 }
 
 .city-time {
     text-align: right;
     position: relative;
     top: -43px;
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 300;
 }
 
