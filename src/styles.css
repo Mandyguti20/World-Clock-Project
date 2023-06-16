@@ -20,7 +20,8 @@ body {
     color: #1aa7ec;
     font-size: 60px;
     margin: 5px;
-    font-weight: 500;
+    font-weight: bold;
+
 }
 
 .am-pm {
@@ -66,13 +67,12 @@ h3.city-heading {
 .city-time {
     text-align: right;
     position: relative;
-    top: -43px;
-    font-size: 40px;
-    font-weight: 300;
+    top: -38px;
+    font-size: 30px;
 }
 
-.city-am-pm {
-    font-size: 14px;
+.small {
+    font-size: 10px;
     margin: auto 3px auto -5px;
 }
 

@@ -7,13 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Mandy Gutierrez</title>
 </head>
 <body>
     <div class="container">
         <h1>World Clock</h1>
         <h1 class="main-time">4:18 <span class="am-pm">PM</span></h1>
-        <h4 class="main-date">Thursday, June 15</h5>
+        <h4 class="main-date">Thursday, June 15, 2023</h5>
 
         <select>
             <option value="">Select a city</option>
@@ -24,15 +26,15 @@
             <option value="">Tokyo</option>
         </select>
 
-        <div class="city">
+        <div class="city" id="los-angeles">
             <h3 class="city-heading">Los Angeles</h2>
-            <div class="city-date">Thursday, June 15</div>
-            <div class="city-time">4:34 <span class="city-am-pm">PM</span></div>
+            <div class="city-date">Thursday, June 15, 2023</div>
+            <div class="city-time">4:34:15 <span class="city-am-pm">PM</span></div>
         </div>
-        <div class="city">
+        <div class="city" id="new-york">
             <h3 class="city-heading">New York</h2>
-            <div class="city-date">Thursday, June 15</div>
-            <div class="city-time">4:34 <span class="city-am-pm">PM</span></div>
+            <div class="city-date">Thursday, June 15, 2023</div>
+            <div class="city-time">4:34:15 <small>PM</small></div>
         </div>
     </div>
 
