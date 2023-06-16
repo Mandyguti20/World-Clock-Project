@@ -58,9 +58,14 @@ h3.city-heading {
 .city-time {
     text-align: right;
     position: relative;
-    top: -40px;
-    font-size: 28px;
+    top: -43px;
+    font-size: 34px;
     font-weight: 300;
+}
+
+.city-am-pm {
+    font-size: 14px;
+    margin: auto 3px auto -5px;
 }
 
 footer {
