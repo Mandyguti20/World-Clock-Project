@@ -39,6 +39,7 @@ select {
     padding: 3px;
     opacity: 0.8;
     margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 h3.city-heading {
@@ -47,6 +48,7 @@ h3.city-heading {
 
 .city {
     text-align: left;
+    margin-top: -30px;
 }
 
 .city-date {
@@ -64,4 +66,5 @@ h3.city-heading {
 footer {
     text-align: center;
     margin: 20px;
+    font-size: 12px;
 }
