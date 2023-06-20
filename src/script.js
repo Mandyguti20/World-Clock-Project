@@ -38,6 +38,8 @@ function updateCity(event) {
     `;
 }
 
+
+
 function UpdateCurrentTime() {
 //Current Time Element
 let currentTime  = document.querySelector("#cities");
@@ -57,4 +59,4 @@ citiesSelect.addEventListener("change", updateCity);
 updateTime();
 setInterval(updateTime, 1000)
 UpdateCurrentTime();
-setInterval(UpdateCurrentTime, 1000);
+setInterval (UpdateCurrentTime, 120000);
