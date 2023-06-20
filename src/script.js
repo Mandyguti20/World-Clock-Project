@@ -59,4 +59,4 @@ citiesSelect.addEventListener("change", updateCity);
 updateTime();
 setInterval(updateTime, 1000)
 UpdateCurrentTime();
-setInterval (UpdateCurrentTime, 120000);
+
