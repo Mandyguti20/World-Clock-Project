@@ -18,16 +18,39 @@ tokyoDate.innerHTML = tokyoTimeFormat.format("dddd, MMMM Do, YYYY");
 tokyoTime.innerHTML = `${tokyoTimeFormat.format("h:mm:ss")}
 <small>${tokyoTimeFormat.format("a")}</small>`;
 
-//Current Time Element
-let currentTime  = document.querySelector(".current-time");
-let currentDate = document.querySelector(".current-date");
-let currentTimeFormat = moment().tz(`America/New_York`);
-let currentAmPmElement = document.querySelector("#am-pm");
-currentDate.innerHTML = currentTimeFormat.format("dddd, MMMM Do, YYYY");
-currentTime.innerHTML = `${currentTimeFormat.format("h:mm")}`;
-currentAmPmElement.innerHTML = currentTimeFormat.format("a");
-
 }
+
+function updateCity(event) {
+    let cityTimeZone = event.target.value;
+    let cityTime = moment().tz(cityTimeZone);
+    let cityName = cityTimeZone.replace("_", " ").split('/')
+    [1];
+    let citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML = `
+    <div>
+    <h3>${cityName}</h3>
+    <h1 class="current-time">${cityTime.format("h:mm")} <small>${cityTime.format("a")}</small></h1>
+    <h4 class="current-date">${cityTime.format("dddd, MMMM Do, YYYY")}</h5>
+    </div>
+    `;
+}
+
+function UpdateCurrentTime() {
+//Current Time Element
+let currentTime  = document.querySelector("#cities");
+let currentTimeFormat = moment().tz(`America/New_York`);
+currentTime.innerHTML = `
+<div>
+<h1 class="current-time">${currentTimeFormat.format("h:mm")} <small>${currentTimeFormat.format("a")}</small></h1>
+<h4 class="current-date">${currentTimeFormat.format("dddd, MMMM Do, YYYY")}</h5>
+</div>
+`;
+}
+
+let citiesSelect = document.querySelector("#city");
+citiesSelect.addEventListener("change", updateCity);
 
 updateTime();
 setInterval(updateTime, 1000)
+UpdateCurrentTime();
+setInterval(UpdateCurrentTime, 60000);

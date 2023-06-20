@@ -14,16 +14,16 @@
 <body>
     <div class="container">
         <h1>World Clock</h1>
-        <h1 class="current-time">4:18 <span class="am-pm" id="am-pm">PM</span></h1>
-        <h4 class="current-date">Thursday, June 15, 2023</h5>
-
-        <select>
+        <div id="cities">
+            <h1 class="current-time"><small></small></h1>
+            <h4 class="current-date"></h5>
+        </div>
+        <select id="city">
             <option value="">Select a city</option>
-            <option value="">New York</option>
-            <option value="">Bogota</option>
-            <option value="">Los Angeles</option>
-            <option value="">London</option>
-            <option value="">Tokyo</option>
+            <option value="Pacific/Honolulu">Honolulu</option>
+            <option value="America/Bogota">Bogota</option>
+            <option value="Europe/London">London</option>
+            <option value="America/Santo_Domingo">Santo Domingo</option>
         </select>
 
         <div class="city" id="los-angeles">

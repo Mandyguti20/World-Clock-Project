@@ -2,12 +2,12 @@ body {
     background-color: #1aa7ec;
     color: white;
     font-family: sans-serif;
-    min-width: 280px;
+    min-width: 300px;
 }
 
 .container {
     text-align: center;
-    max-width: 300px;
+    max-width: 400px;
     min-width: min-content;
     margin: 0 auto;
     background-color: #1c1c1c;
@@ -22,8 +22,8 @@ h1 {
 
 .current-time {
     color: #1aa7ec;
-    font-size: 75px;
-    margin: 5px;
+    font-size: 60px;
+    margin: 10px;
     font-weight: bold;
 
 }
@@ -77,8 +77,8 @@ h3.city-heading {
     font-size: 30px;
 }
 
-.small {
-    font-size: 10px;
+.current-time h1 small {
+    font-size: 8px;
     margin: auto 3px auto -5px;
 }
 
