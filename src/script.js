@@ -22,13 +22,16 @@ tokyoTime.innerHTML = `${tokyoTimeFormat.format("h:mm:ss")}
 
 function updateCity(event) {
     let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
     let cityTime = moment().tz(cityTimeZone);
     let cityName = cityTimeZone.replace("_", " ").split('/')
     [1];
     let citiesElement = document.querySelector("#cities");
     citiesElement.innerHTML = `
     <div>
-    <h3>${cityName}</h3>
+    <h3>The current time in ${cityName}:</h3>
     <h1 class="current-time">${cityTime.format("h:mm")} <small>${cityTime.format("a")}</small></h1>
     <h4 class="current-date">${cityTime.format("dddd, MMMM Do, YYYY")}</h5>
     </div>
@@ -41,6 +44,7 @@ let currentTime  = document.querySelector("#cities");
 let currentTimeFormat = moment().tz(`America/New_York`);
 currentTime.innerHTML = `
 <div>
+<h3>Current time in the US East Coast:</h3>
 <h1 class="current-time">${currentTimeFormat.format("h:mm")} <small>${currentTimeFormat.format("a")}</small></h1>
 <h4 class="current-date">${currentTimeFormat.format("dddd, MMMM Do, YYYY")}</h5>
 </div>
@@ -53,4 +57,4 @@ citiesSelect.addEventListener("change", updateCity);
 updateTime();
 setInterval(updateTime, 1000)
 UpdateCurrentTime();
-setInterval(UpdateCurrentTime, 60000);
+setInterval(UpdateCurrentTime, 1000);
